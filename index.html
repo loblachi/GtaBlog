@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!--https://icons.getbootstrap.com/ -->
+    <link type="text/css" href="MainIndex.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jq.js"></script>
+
+</head>
+<body>
+    <nav style="font-family:Bahnschrift;" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-light">
+        <div class="container">
+            <a style="margin-right:50px; " href="">
+                <img style="height:23px;" src="./Images/np_logo.png" />
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between align-items-center">
+                <ul class="navbar-nav flex-grow-1" >
+                    <li style="margin:0px 5px;">Home</li>
+                    <li style="margin:0px 5px;">About</li>
+                    <li style="margin:0px 5px;">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<main id="heroDiv">
+    <div class="hdiv1">
+        <h4>Discover the ultimate GTA roleplay experience</h4>
+        <p>Explore the immersive world of GTA roleplay and the thousands of players on exciting adventures</p>
+        <div class="hbdiv">
+            <button id="btn1" class="btn btn-dark btn-md ">Join</button>
+            <button id="btn2" class="btn btn-outline-dark btn-md">Learn more</button>
+        </div>
+    </div>
+    <div class="hdiv2">
+        <img src="./Images/gta4-2.jpg" />
+    </div>
+</main>
+
+<section id="Div1">
+    <div class="dd1">
+        <p class="dp1">Discover</p>
+
+        <h4 class="dh4">Stay updated with the latest GTA roleplay news</h4>
+        <p class="dp2">Get the latest news, trends and updates about GTA roleplay servers. Stay ahead of the game and never miss out on exciting developments in the community.</p>
+        <div class="newsdiv">
+            <div class="nd1">
+                <span>
+                    <i class="bi bi-graph-up-arrow"></i>
+                </span>
+                <h4>Trending</h4>
+                <p>Stay informed about the hottest servers, new features and popular gameplay styles. </p>
+            </div>
+            <div class="nd2">
+                <span>
+                    <i class="bi bi-people-fill"></i>
+                </span>
+                <h4>Community</h4>
+                <p>Connect with the fellow players, share experiences and discover new roleplay experiences. </p>
+            </div>
+        </div>
+        <div class="btndiv">
+            <button id="btn11" class="btn btn-dark btn-md">Learn more </button>
+            <button id="btn22" class="btn btn-outline-dark btn-md">Sign Up <i class="bi bi-arrow-right-circle-fill"></i></button>
+        </div>
+    </div>
+
+    <div class="dd2">
+        <img class="image2" src="./Images/cg.jpg" />
+    </div>
+</section>
+
+<section id="Div2">
+    <div class="d2d1">
+        <p>Latest</p>
+        <h4>Discover trending severs</h4>
+        <p>Experience the thrill of GTA roleplay in a variety of servers catering to various gameplay styles. </p>
+    </div>
+    <div class="coldiv">
+        <div class="cdiv1">
+            <div class="cdd1">
+                <img src="./Images/vagos.png" />
+            </div>
+            <div class="cdd2">
+                <!-- Info block 1-->
+                <p>Roleplay</p>
+                <h4>Explore the world of GTA roleplay</h4>
+                <p>Learn about the new servers and other streamers in the game.</p>
+            </div>
+        </div>
+        <div class="cdiv2">
+            <div class="cdd21">
+                <img src="./Images/ggpng.png" />
+            </div>
+            <div class="cdd22">
+                <!-- Info block 2-->
+                <p>Tips</p>
+                <h4>Essential tips to know getting into GTA roleplay</h4>
+                <p>Learn about new tricks ,tips and other stuff. </p>
+            </div>
+        </div>
+        <div class="cdiv3">
+            <div class="cdd31">
+                <img src="./Images/mandem.png" />
+            </div>
+            <div class="cdd32">
+                <!-- Info block 3-->
+                <p>News</p>
+                <h4>The latest GTA roleplay news</h4>
+                <p>Stay informed about the latest announcements. </p>
+            </div>
+        </div>
+    </div>
+    <div class="btnd2">
+        <button class="btn btn-outline-dark btn-md">View All</button>
+    </div>
+</section>
+
+<section id="faq">
+    <h4 class="faqheader">FAQs</h4>
+    <p  id="phde" class="phide" onclick="closeAll()">[Hide]</p>
+    <p class="pheader">Find answers to frequently asked questions about GTA roleplay. </p>
+
+    <div id="faqmain">
+        <hr />
+        <p class="psubhead" data-id="d1">What is GTA V roleplay ?</p>
+        <div class="fdiv" id="d1">
+            GTA RP are servers modified to create an environment where players can roleplay as characters in GTA Online rather than having the normal GTA Online experience
+        </div>
+        <hr />
+
+        <p class="psubhead" data-id="d2">How do I join a GTA roleplay server ?</p>
+        <div class="fdiv" id="d2">
+            Inside the GTA 5 main menu, press the F8 key to open the FiveM console. Type “ connect <server IP> ” without the quotation marks, replacing “ <server IP> ” with the IP or domain name of the RP server you chose earlier. Press Enter to connect to the server.
+        </div>
+        <hr />
+
+        <p class="psubhead" data-id="d3">What are the different roles in GTA roleplay ? </p>
+        <div class="fdiv" id="d3">
+            There are many rules in GTA roleplay and what you want to be is solely up to you as the player. You can do anything you want to as long as you follow the rules and regulations set.
+        </div>
+
+        <hr />
+        <p class="psubhead" data-id="d4">Are there any rules in GTA roleplay ? </p>
+        <div class="fdiv" id="d4">
+            There are some rules that players must follow and a document that is provided to players to read before entering a server . Each server is unique and has it's own rules and has it's own rules and regulations that players must follow or get punished accordingly.
+        </div>
+        <hr />
+        <p class="psubhead" data-id="d5">Can I create my own GTA roleplay sever ? </p>
+        <div class="fdiv" id="d5">
+            There are some rules that players must follow and a document that is provided to players to read before entering a server . Each server is unique and has it's own rules and has it's own rules and regulations that players must follow or get punished accordingly.
+        </div>
+
+        <hr />
+        <p class="psubhead" data-id="d6"> What is Fail RP, and how do you avoid it? </p>
+        <div class="fdiv" id="d6">
+            Some examples of fail Rp are : 
+            Abusing GTA physics, such as jumping mountains in vehicles.
+            Not roleplaying injuries, such as being shot multiple times and walking away.
+            Using your phone in cuffs.
+            Respawning with LEO or EMS on the scene.
+
+            You can avoid it by reading the rules beforehand and before joining the server to know what will and wont get you banned. 
+        </div>
+
+        <hr />
+        <p class="psubhead" data-id="d7">What is Meta Gaming, and how do you avoid it?</p>
+        <div class="fdiv" id="d7">
+            Meta gaming is the use of information that your character has not obtained in-game but outside that realm. 
+            For example : Getting information by your chat if you are a streamer and using it in-game to your own advantage. 
+        </div>
+    </div>
+    <hr />
+    <br />
+    <div class="dcontact">
+        <h4>Still have questions ?</h4>
+        <p>Feel free to reach out to us. </p>
+        <button class="btn btn-dark btn-md">Contact Us</button>
+    </div>
+</section>
+
+<section id="footer">
+    <div id="f1">
+        <div class="logo">
+            <img src="./Images/np_logo.png" />
+        </div>
+        <div class="ref1">
+            <h4>About Us</h4>
+            <p>Blog</p>
+            <p>News</p>
+            <p>Updates</p>
+            <p>Servers</p>
+        </div>
+        <div class="ref2">
+            <h4>Contact Us</h4>
+            <p>FAQ</p>
+            <p>Customer Support</p>
+            <p>Terms of Service</p>
+            <p>Community</p>
+        </div>
+        <div class="ref3">
+            <h4>Join Us</h4>
+            <p>Become a member</p>
+            <p>Partnership</p>
+            <p>Sponserships</p>
+            <p>Advertise</p>
+        </div>
+        <div class="em">
+            <h4>Subscribe</h4>
+            <p>Sign into our newsletter to recieve latest features and updates</p>
+            <div class="emdiv">
+                <input class="form-control" type="text" placeholder="Enter your email" id="email" />
+                <button  id="embtn" class="btn btn-dark btn-md">Subscribe</button>
+            </div>
+            <p>By subscribing, you are consenting to recieve updates on our future updates and features. </p>
+
+        </div>
+    </div>
+    <div id="hr">
+        <hr />
+    </div>
+    <div id="f2">
+        <div class="f2d1">
+            <p>©GTA Roleplay, All Rights Reserved</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+            <p>Cookie Settings</p>
+        </div>
+        <div class="f2d2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
